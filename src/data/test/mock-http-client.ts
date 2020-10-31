@@ -1,4 +1,4 @@
-import { HttpPostClient } from "../protocols/http/httpPostClient"
+import { HttpPostClient } from '../protocols/http/httpPostClient'
 
 export class HttpPostClientSpy implements HttpPostClient {
   url?: string
