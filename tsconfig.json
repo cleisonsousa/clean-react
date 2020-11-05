@@ -12,13 +12,15 @@
     "jsx": "react",
     "rootDir": "src",
     "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
     "allowJs": true,
     "skipLibCheck": true,                     /* Skip type checking of declaration files. */
     "allowSyntheticDefaultImports": true,
     "strict": true,                           /* Enable all strict type-checking options. */
     "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
     "resolveJsonModule": true,
-    // "isolatedModules": true,
     "noEmit": true
   },
   "include": [
