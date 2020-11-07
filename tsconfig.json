@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "target": "es6",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
     "lib":[
       "dom",
       "dom.iterable",
@@ -16,11 +16,7 @@
       "@/*": ["*"]
     },
     "allowJs": true,
-    "skipLibCheck": true,                     /* Skip type checking of declaration files. */
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,  /* Disallow inconsistently-cased references to the same file. */
-    "resolveJsonModule": true,
-    "noEmit": true
+    "resolveJsonModule": true
   },
   "include": [
     "src"
