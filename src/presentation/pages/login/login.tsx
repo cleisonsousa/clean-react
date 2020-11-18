@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Styles from './login-styles.scss'
 import { LoginHeader, FormStatus, Input, Footer } from '@/presentation/components'
 import Context from '@/presentation/contexts/form/form-contexts'
-import { Validation } from '@/presentation/protocol/validation'
+import { Validation } from '@/presentation/protocols/validation'
 
 type Props = {
   validation: Validation
@@ -13,13 +13,16 @@ const Login: React.FC<Props> = ({ validation }: Props) => {
     isLoading: false,
     email: '',
     password: '',
-    emailError: 'Campo Obrigatório',
+    emailError: '',
     passwordError: 'Campo Obrigatório',
     mainError: ''
   })
 
   useEffect(() => {
-    validation.validate('email', state.email)
+    setState({
+      ...state,
+      emailError: validation.validate('email', state.email)
+    })
   }, [state.email])
 
   useEffect(() => {
